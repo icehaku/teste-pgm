@@ -1,0 +1,28 @@
+<div class="welcome">
+  <h2>Troque rápidas idéias com a Web!</h2>
+</div>
+
+<div id="post-board">
+
+  <% @posts.reverse.each do |post| %>
+
+    <div class="post">
+      <div class="top-post">
+        <%= post.autor %><br>
+      </div>
+
+      <div class="post-content">
+        <p><%= post.content %></p>
+      </div>
+    </div>
+    
+  <% end %>
+
+</div>
+
+<br>
+
+<div class="new-post">
+  <h2>Eae, o que ta rolando?</h2>
+</div>
+<%= render 'form' %>

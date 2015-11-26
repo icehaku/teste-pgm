@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LightBlog</title>
+  
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="top-bar">
+	<div class="logo">LightBlog</div>
+</div>
+
+<div class="divider-user">
+	<% if user_signed_in? %>
+		<p class="user-info">
+		  	Logado como: <%= current_user.nome %> 
+		  	<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+		</p>
+	<% else %>
+	  	<p class="user-info">
+	  		Postando como: Visitante, <%= link_to('Registre-se', "/user/register/sign_up")  %> para reservar seu nome 
+	 	 	 ou <%= link_to('Logue-se', new_user_session_path)  %> se já for registrado.
+
+	  	</p>
+	<% end %>
+</div>
+
+<div class="content center">
+
+	<div class="messages center">
+		<% if notice %>
+			<div class="bg-success">
+				<p class="notice"><%= notice %></p>
+			</div>
+		<% end %>
+
+		<% if alert %>
+			<p class="alert bg-alert"><%= alert %></p>
+		<% end %>
+	</div>
+
+	<div class="content-inside center">
+		<%= yield %>
+	</div>	
+</div>
+
+</body>
+</html>
