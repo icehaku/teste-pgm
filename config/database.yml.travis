@@ -1,19 +1,4 @@
 test:
-   adapter: postgresql
-   enconding: unicode
-   database: micro_blog_test
-   pool: 5
-   username: elano
-   password: elano
-   host: localhost
-   timeout: 5000
-
-development:
-   adapter: postgresql
-   enconding: unicode
-   database: micro_blog
-   pool: 5
-   username: elano
-   password: elano
-   host: localhost
-   timeout: 5000
+  adapter: postgresql
+  database: travis_ci_test
+  username: postgres
