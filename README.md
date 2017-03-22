@@ -2,7 +2,7 @@
 Projeto desenvolvido para selecao de dev.Jr;
 
 Web APP [@HEROKU]:
-https://sheltered-woodland-4955.herokuapp.com/
+https://teste-pgm.herokuapp.com/
 
 Git:
 https://github.com/icehaku/teste-pgm
