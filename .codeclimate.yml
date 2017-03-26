@@ -1,9 +1,10 @@
 engines:
-  # ... CONFIG CONTENT ...
-  eslint:
+  rubocop:
     enabled: true
-    # ... CONFIG CONTENT ...
-    checks:
-      max-statements:
-        enabled: false
-# ... CONFIG CONTENT ...
+
+ratings:
+  paths:
+  - "**.rb"
+
+exclude_paths:
+"app/assets/javascripts/"
