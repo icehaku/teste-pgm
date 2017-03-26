@@ -4,6 +4,6 @@ engines:
     enabled: true
     # ... CONFIG CONTENT ...
     checks:
-      no-eval:
+      max-statements:
         enabled: false
 # ... CONFIG CONTENT ...
