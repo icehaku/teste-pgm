@@ -1,0 +1,9 @@
+engines:
+  # ... CONFIG CONTENT ...
+  eslint:
+    enabled: true
+    # ... CONFIG CONTENT ...
+    checks:
+      no-eval:
+        enabled: false
+# ... CONFIG CONTENT ...
