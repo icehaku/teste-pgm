@@ -1,10 +1,9 @@
 engines:
   rubocop:
     enabled: true
-
 ratings:
   paths:
-  - "**.rb"
-
+  - app/**
+  - lib/**
 exclude_paths:
-"app/assets/javascripts/"
+- "app/assets/javascripts/"
