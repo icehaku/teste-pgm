@@ -1,12 +1,22 @@
-language: ruby
-rvm:
- - 2.2.3
+env:
+  global:
+    - CC_TEST_REPORTER_ID=0f0008f8016c23aa8b323bd3f634e4eb598f21b9bf961e31f630abe5e92fb3f0
+    - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
 
+language: ruby
+
+rvm:
+  - 2.2.3
+  
 services:
   - postgresql
-
+  
 before_script:
   - cp config/database.yml.travis config/database.yml
   - psql -c 'create database travis_ci_test;' -U postgres  
-# uncomment this line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  
+script:
+  - bundle exec rspec
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
