@@ -11,3 +11,7 @@ https://teste-pgm.herokuapp.com/
 <a href="https://travis-ci.org/icehaku/teste-pgm">
 <img src="https://travis-ci.org/icehaku/teste-pgm.svg?branch=master" />
 </a>
+
+<a href="https://codeclimate.com/github/icehaku/mcs-bot/coverage">
+<img src="https://codeclimate.com/github/icehaku/mcs-bot/badges/coverage.svg" />
+</a>
