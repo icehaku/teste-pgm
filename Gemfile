@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.3'
+
 gem "pg"
 gem "rubocop"
 gem "devise"
@@ -20,13 +22,9 @@ group :development, :test  do
   gem 'byebug'
   gem 'simplecov'
   gem 'codeclimate-test-reporter', '~> 1.0.0'
-  
+
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'capybara'
 end
-
-gem 'rails_12factor', group: :production
-
-ruby '2.2.3' 
