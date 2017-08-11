@@ -1,5 +1,10 @@
 # teste-pgm
-Projeto desenvolvido para selecao de dev.Jr;
+project for a job interview;
+
+A simple blog with:
+-heroku served
+-test coverage
+-continuous integration
 
 APP:
 https://teste-pgm.herokuapp.com/
