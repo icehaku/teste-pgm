@@ -4,5 +4,9 @@ rvm:
 addons:
   code_climate:
     repo_token: 0f0008f8016c23aa8b323bd3f634e4eb598f21b9bf961e31f630abe5e92fb3f0
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - cp config/database.yml.travis config/database.yml
 after_success:
   - bundle exec codeclimate-test-reporter
+  
