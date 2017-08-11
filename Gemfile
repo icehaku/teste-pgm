@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.1'
 
 gem "pg"
 gem "rubocop"
@@ -14,10 +14,16 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+
+group :doc do
+  gem 'sdoc', '~> 0.4.0'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
+end
 
 group :development, :test  do
-  gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'byebug'
   gem 'simplecov'
