@@ -14,9 +14,9 @@ project for a job interview;
 </a>
 
 A simple blog with:
--heroku served
--test coverage
--continuous integration
+ * heroku served
+ * test coverage
+ * continuous integration
 
 APP:
 https://teste-pgm.herokuapp.com/
