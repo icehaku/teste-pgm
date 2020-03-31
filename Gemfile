@@ -1,35 +1,32 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.6.3'
 
 gem "pg"
 gem "rubocop"
 gem "devise"
 
 #DEFAULTS
-gem 'rails', '4.2.4'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'rails', '5.2.4.2'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-
-group :doc do
-  gem 'sdoc', '~> 0.4.0'
-end
+gem 'jbuilder'
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
 end
 
 group :development, :test  do
   gem 'spring'
   gem 'byebug'
   gem 'simplecov'
-  gem 'codeclimate-test-reporter', '~> 1.0.0'
+  gem 'codeclimate-test-reporter'
+  gem 'pry-byebug'
 
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'capybara'

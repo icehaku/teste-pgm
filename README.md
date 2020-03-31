@@ -1,22 +1,28 @@
-# teste-pgm
-project for a job interview;
+## README
 
-<a href="https://travis-ci.org/icehaku/teste-pgm">
-<img src="https://travis-ci.org/icehaku/teste-pgm.svg?branch=master" />
-</a>
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-<a href="https://codeclimate.com/github/icehaku/teste-pgm">
-<img src="https://codeclimate.com/github/icehaku/teste-pgm/badges/gpa.svg" />
-</a>
+Things you may want to cover:
 
-<a href="https://codeclimate.com/github/icehaku/teste-pgm/coverage">
-<img src="https://codeclimate.com/github/icehaku/teste-pgm/badges/coverage.svg" />
-</a>
+* Ruby version
 
-A simple blog with:
- * heroku served
- * test coverage
- * continuous integration
+* System dependencies
 
-APP:
-https://teste-pgm.herokuapp.com/
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
